@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  background-color: #EFF3FA;
+  color: #282E32;
+  font-size: 18px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+header i {
+  font-size: 60px;
+  color: rgba(87, 124, 0, 0.712);
+}
+
+header .menu:hover {
+  transform: rotate(-180deg);
+  transition: all ease 0.5s;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 90px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.right {
+  width: 50%;
+}
+
+.right img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 82px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+p {
+  padding: 50px 0;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 17px 30px;
+  background-color: #393e32;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all ease 0.5s;
+}
+
+.btn:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  background-color: #80c5d4;
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+
+
+.btn:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -10px;
+  left: -10px;
+  background-color: #d4809e;
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+
+.btn:hover {
+  background-color: #80c5d4;
+}
+
+.btn:hover::before {
+  top: -10px;
+  left: -10px;
+  background-color: #282e32;
+}
+
+.btn:hover::after {
+  top: 10px;
+  left: 10px;
+}
+
+.blob {
+  position: absolute;
+  width: 764px;
+  height: 764px;
+  border-radius: 100%;
+  background-color: #80c5d4;
+}
+
+.blob1 {
+  right: -250px;
+  top: -650px;
+}
+
+.blob2 {
+  left: -250px;
+  bottom: -650px;
+  background-color: #80d4b1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #c4e2ed;
+  z-index: 999;
+}
